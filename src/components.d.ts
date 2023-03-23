@@ -7,9 +7,14 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Header: typeof import('./components/Header.vue')['default']
+    MatchDisplay: typeof import('./components/MatchDisplay.vue')['default']
+    RankingDisplay: typeof import('./components/RankingDisplay.vue')['default']
     README: typeof import('./components/README.md')['default']
+    ReportMatchButton: typeof import('./components/ReportMatchButton.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SeeMoreButton: typeof import('./components/SeeMoreButton.vue')['default']
     TheCounter: typeof import('./components/TheCounter.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TheInput: typeof import('./components/TheInput.vue')['default']
